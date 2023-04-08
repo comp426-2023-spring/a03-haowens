@@ -56,7 +56,7 @@ if (args._.length === 0) {
     }
     process.exit(0);
 } else if (args._.length === 1) {
-    let x = Math.floor(Math.random() * 5);
+    let x = Math.floor(Math.random() * 4);
     const play = args._[0].toLowerCase();
     if (play === "rock") {
         if (x === 0) {
