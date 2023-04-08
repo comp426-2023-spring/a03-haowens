@@ -30,23 +30,34 @@ if ("r" in args || "rules" in args) {
     process.exit(0);
 }
 
-
 if (args._.length === 0) {
-    let x = Math.floor(Math.random() * 3);
-    if (x === 0) {
-        console.log({"player":"rock"});
-    } 
-    if (x === 1) {
-        console.log({"player":"paper"});
+    try {
+        console.log(JSON.stringify(rps()));
+        process.exit(0);
+    } catch {
+        console.log("Usage: node-rps [SHOT]");
+        console.log("Play Rock Paper Scissors (RPS)");
+        console.log("\n");
+        console.log("   -h, --help      display this help message and exit");
+        console.log("   -r, --rules     display the rules and exit");
+        console.log("\n");
+        console.log("Examples:");
+        console.log('   node-rps        Return JSON with single player RPS result. e.g. {"player":"rock"}');
+        console.log('   node-rps rock   Return JSON with results for RPS played against a simulated opponent. e.g {"player":"rock","opponent":"scissors","result":"win"}');
+        console.log('\n');
+        console.log("Rules for Rock Paper Scissors:");
+        console.log("\n");
+        console.log("   - Scissors CUTS Paper");
+        console.log("   - Paper COVERS Rock");
+        console.log("   - Rock CRUSHES Scissors");
+        process.exit(0);
     }
-    if (x === 2) {
-        console.log({"player":"scissors"});
-    }
-    process.exit(0);
-} else if (args._.length === 1) {
+}
+if (args._.length === 1) {
     try {
         const play = args._[0].toLowerCase();
         console.log(JSON.stringify(rps(play)));
+        process.exit(0);
     } catch(e) {
         console.log("Usage: node-rps [SHOT]");
         console.log("Play Rock Paper Scissors (RPS)");
