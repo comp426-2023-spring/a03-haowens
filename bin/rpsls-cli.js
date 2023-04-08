@@ -14,7 +14,7 @@ if ("h" in args || "help" in args) {
     console.log('   -h, --help        display this help message and exit');
     console.log(    '-r, --rules       display the rules and exit');
     console.log('\n');
-    console('Examples:');
+    console.log('Examples:');
     console.log('   node-rpsls        Return JSON with single player RPSLS result. e.g. {"player":"rock"}');
     console.log('   node-rpsls rock   Return JSON with results for RPSLS played against a simulated opponent. e.g {"player":"rock","opponent":"Spock","result":"lose"}');
     process.exit(0);
@@ -150,7 +150,7 @@ if (args._.length === 0) {
         console.log('   -h, --help        display this help message and exit');
         console.log(    '-r, --rules       display the rules and exit');
         console.log('\n');
-        console('Examples:');
+        console.log('Examples:');
         console.log('   node-rpsls        Return JSON with single player RPSLS result. e.g. {"player":"rock"}');
         console.log('   node-rpsls rock   Return JSON with results for RPSLS played against a simulated opponent. e.g {"player":"rock","opponent":"Spock","result":"lose"}');
         console.log('\n');
@@ -175,7 +175,7 @@ if (args._.length === 0) {
     console.log('   -h, --help        display this help message and exit');
     console.log(    '-r, --rules       display the rules and exit');
     console.log('\n');
-    console('Examples:');
+    console.log('Examples:');
     console.log('   node-rpsls        Return JSON with single player RPSLS result. e.g. {"player":"rock"}');
     console.log('   node-rpsls rock   Return JSON with results for RPSLS played against a simulated opponent. e.g {"player":"rock","opponent":"Spock","result":"lose"}');
     console.log('\n');
