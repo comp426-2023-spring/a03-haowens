@@ -12,7 +12,7 @@ if ("h" in args || "help" in args) {
     console.log('Play the Lizard-Spock Expansion of Rock Paper Scissors (RPSLS)!');
     console.log('\n');
     console.log('   -h, --help        display this help message and exit');
-    console.log(    '-r, --rules       display the rules and exit');
+    console.log('   -r, --rules       display the rules and exit');
     console.log('\n');
     console.log('Examples:');
     console.log('   node-rpsls        Return JSON with single player RPSLS result. e.g. {"player":"rock"}');
@@ -148,7 +148,7 @@ if (args._.length === 0) {
         console.log('Play the Lizard-Spock Expansion of Rock Paper Scissors (RPSLS)!');
         console.log('\n');
         console.log('   -h, --help        display this help message and exit');
-        console.log(    '-r, --rules       display the rules and exit');
+        console.log('   -r, --rules       display the rules and exit');
         console.log('\n');
         console.log('Examples:');
         console.log('   node-rpsls        Return JSON with single player RPSLS result. e.g. {"player":"rock"}');
@@ -173,7 +173,7 @@ if (args._.length === 0) {
     console.log('Play the Lizard-Spock Expansion of Rock Paper Scissors (RPSLS)!');
     console.log('\n');
     console.log('   -h, --help        display this help message and exit');
-    console.log(    '-r, --rules       display the rules and exit');
+    console.log('   -r, --rules       display the rules and exit');
     console.log('\n');
     console.log('Examples:');
     console.log('   node-rpsls        Return JSON with single player RPSLS result. e.g. {"player":"rock"}');
