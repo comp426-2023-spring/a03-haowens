@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 //A separate command line interface (wrapper) for both RPS and RPSLS (???)
-//must be case agnostic
+// make importable 
 
 import minimist from "minimist";
 
@@ -29,25 +29,9 @@ if ("r" in args || "rules" in args) {
     process.exit(0);
 }
 
-function randomNumber(min, max) {
-    return Math.random() * (max - min) + min;
-}
-
-// if (args._.length === 0) {
-//     console.log("test 1");
-//     console.log(args[0]);
-// } else if (args._.length === 1) {
-//     console.log("test 2");
-//     console.log(args._[0]);
-// } else if (args._.length === 2) {
-//     console.log("test 3");
-// } else {
-//     console.log("test 4");
-// }
-
 
 if (args._.length === 0) {
-    let x = Math.floor(Math.random() * 2);
+    let x = Math.floor(Math.random() * 3);
     if (x === 0) {
         console.log({"player":"rock"});
     } 
@@ -59,7 +43,7 @@ if (args._.length === 0) {
     }
     process.exit(0);
 } else if (args._.length === 1) {
-    let x = Math.floor(Math.random() * 2);
+    let x = Math.floor(Math.random() * 3);
     const play = args._[0].toLowerCase();
     if (play === "rock") {
         if (x === 0) {
